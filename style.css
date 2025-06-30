@@ -1,0 +1,65 @@
+body {
+  margin:0;
+  background:#000;
+  color:#00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+#sidebar {
+  position:fixed;
+  top:0;
+  left:0;
+  width:200px;
+  height:100%;
+  background:#011;
+  padding:20px;
+  box-shadow:inset -2px 0 5px #0f0;
+}
+
+#sidebar h2 {
+  margin-top:0;
+}
+
+#sidebar ul {
+  list-style:none;
+  padding:0;
+}
+
+#sidebar li {
+  padding:10px 0;
+  cursor:pointer;
+}
+
+#sidebar li:hover {
+  background:#020;
+}
+
+#content {
+  margin-left:220px;
+  padding:20px;
+}
+
+.panel h2 {
+  margin-top:0;
+}
+
+textarea, input, button {
+  background:#000;
+  color:#0f0;
+  border:1px solid #0f0;
+  padding:5px;
+  width:100%;
+  box-sizing:border-box;
+}
+
+button {
+  cursor:pointer;
+}
+
+.login #login-box {
+  width:300px;
+  margin:150px auto;
+  text-align:center;
+}
+
+.error { color:red; }

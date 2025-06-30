@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hacker Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <h2>MENU</h2>
+    <ul>
+      <li onclick="showPanel('curhat')">CURHAT</li>
+      <li onclick="showPanel('addAkun')">ADD AKUN</li>
+    </ul>
+  </aside>
+  <main id="content">
+    <section id="curhat" class="panel">
+      <h2>Curhat</h2>
+      <form id="curhatForm">
+        <textarea id="curhatText" rows="4" placeholder="Tulis curhat..."></textarea><br>
+        <button type="submit">Kirim</button>
+      </form>
+      <ul id="curhatList"></ul>
+    </section>
+    <section id="addAkun" class="panel" style="display:none">
+      <h2>Tambah Akun</h2>
+      <form id="akunForm">
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <button type="submit">Tambah</button>
+      </form>
+      <ul id="akunList"></ul>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

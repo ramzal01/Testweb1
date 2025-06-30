@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Access Granted?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+<div id="login-box">
+  <h1>ENTER PASSWORD</h1>
+  <input type="password" id="password" autocomplete="off" autofocus>
+  <button onclick="login()">Unlock</button>
+  <p id="error" class="error"></p>
+</div>
+<script src="script.js"></script>
+<script>
+function login() {
+  const pass = document.getElementById('password').value;
+  if (pass === window.APP_PASS) {
+    sessionStorage.setItem('auth','1');
+    location.href = 'dashboard.html';
+  } else {
+    document.getElementById('error').textContent = 'ACCESS DENIED';
+  }
+}
+</script>
+</body>
+</html>
